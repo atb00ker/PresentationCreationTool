@@ -1,5 +1,5 @@
 /**************************
-* Common Files
+* Common Code
 **************************/
 
 *{
@@ -32,25 +32,31 @@ body,html{
 	width: 100%;
 	text-align: center;
 }
-/**************************
-* Nanigation Control Page
-**************************/
 
+/**************************
+* Nanigation Control
+**************************/
+#controlPositions{
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	text-align: center;
+}
 #navControlsRight{
-	position: relative;
     font-size: 50px;
+	padding: 0vmin 2px 0vmin 9vmin;
 }
 #navControlsLeft{
-	position: relative;
     font-size: 50px;
+	padding: 0vmin 9vmin 0vmin 2px;
 }
 #navControlsDown{
-	position: relative;
     font-size: 50px;
+	padding: 0vmin 9vmin 0vmin 9vmin;
 }
 #navControlsUp{
-	position: relative;
 	font-size: 50px;
+	padding: 0vmin 9vmin 0vmin 9vmin;
 }
 /**************************
 * Main Title Page
