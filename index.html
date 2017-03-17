@@ -41,28 +41,57 @@
 
 	</head>
     <body>
+    <!-- preloader -->
+    <div id="preloader">
+    	<div>
+        	<div class="absolute-center">
+	        	<div id="preloader-ball"></div>
+    	        <div id="preloader-text">loading</div>
+            </div>
+        </div>
+    </div>
 	<!--Navigation Bar-->
 		<div id="controlPositions">
-			<a id="navControlsLeft" onclick="buttonClickLeft()" href="#"><i class="fa fa-caret-left"></i></a>
-			<a id="navControlsUp" onclick="buttonClickUp()" href="#"><i class="fa fa-caret-up"></i></a>
-			<a id="navControlsDown" onclick="buttonClickDown()" href="#"><i class="fa fa-caret-down"></i></a>
-			<a id="navControlsRight" onclick="buttonClickRight()" href="#"><i class="fa fa-caret-right"></i></a>
+			<div class="navControlWrapper" id="navControlsLeft"><div><i class="fa fa-caret-left navControls"></i></div></div>
+			<div class="navControlWrapper"  id="navControlsRight"><div><i class="fa fa-caret-right navControls"></i></div></div>
 		</div>
+        
+        <div id="slideIndicator">
+        	<div>
+	        	<div id="currentSlide" class="slideNumber"></div> /
+	            <div id="totalSlide" class="slideNumber"></div>
+            </div>
+        </div>
 	<!-- Main Title Page -->
-        <section id="homePage">
-			<div class="pageTitle">	
+        <section id="slide-1" class="slide active">
+			<div class="slideTitle">	
 				 ALiAS
 			</div>
-			<div class="pageContent">
+			<div class="slideContent">
 				whats the fuss about, and whats in it for me
 			</div>
         </section>
 	<!-- Second Page -->
-        <section id="secondPage">
-			<div class="pageTitle" id="secondPageTitle">	
+        <section id="slide-2" class="slide">
+			<div class="slideTitle" id="secondPageTitle">	
 				 What is ALiAS
 			</div>
-			<div class="pageContent" id="secondPageContent">
+			<div class="slideContent" id="secondPageContent">
+				<ul>
+					A Club in amity Where:
+					<li>You can find like minded Delhi/NCR Tech Communities</li>
+					<li>Learn Linux, Programming Languages, Networking, UI/UX Designing etc.</li>
+					<li>Meet experts working in various industries.</li>
+					<li>Chance to find Interships under our Alumni.</li>
+				</ul>
+			</div>
+        </section>
+	<!-- Third Page -->	
+        <section id="slide-3" class="slide">
+			<div class="slideTitle" id="secondPageTitle">	
+				 What is ALiAS
+			</div>
+			<div class="slideContent" id="secondPageContent">
 				<ul>
 					A Club in amity Where:
 					<li>You can find like minded Delhi/NCR Tech Communities</li>
@@ -75,7 +104,7 @@
 		
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
-		
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 		<!-- Functionality Scripts -->
 		<script src="js/navigationControls.js"></script>
     </body>
