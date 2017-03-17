@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>ALiAS and ME</title>
+        <title>ALiASnMe</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
@@ -43,13 +43,13 @@
     <body>
 	<!--Navigation Bar-->
 		<div id="controlPositions">
-			<a id="navControlsLeft" href="#"><i class="fa fa-caret-left"></i></a>
-			<a id="navControlsUp" href="#"><i class="fa fa-caret-up"></i></a>
-			<a id="navControlsDown" href="#"><i class="fa fa-caret-down"></i></a>
-			<a id="navControlsRight" href="#"><i class="fa fa-caret-right"></i></a>
+			<a id="navControlsLeft" onclick="buttonClickLeft()" href="#"><i class="fa fa-caret-left"></i></a>
+			<a id="navControlsUp" onclick="buttonClickUp()" href="#"><i class="fa fa-caret-up"></i></a>
+			<a id="navControlsDown" onclick="buttonClickDown()" href="#"><i class="fa fa-caret-down"></i></a>
+			<a id="navControlsRight" onclick="buttonClickRight()" href="#"><i class="fa fa-caret-right"></i></a>
 		</div>
 	<!-- Main Title Page -->
-        <section>
+        <section id="homePage">
 			<div class="pageTitle">	
 				 ALiAS
 			</div>
@@ -57,12 +57,26 @@
 				whats the fuss about, and whats in it for me
 			</div>
         </section>
+	<!-- Second Page -->
+        <section id="secondPage">
+			<div class="pageTitle" id="secondPageTitle">	
+				 What is ALiAS
+			</div>
+			<div class="pageContent" id="secondPageContent">
+				<ul>
+					A Club in amity Where:
+					<li>You can find like minded Delhi/NCR Tech Communities</li>
+					<li>Learn Linux, Programming Languages, Networking, UI/UX Designing etc.</li>
+					<li>Meet experts working in various industries.</li>
+					<li>Chance to find Interships under our Alumni.</li>
+				</ul>
+			</div>
+        </section>
 		
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		
-
 		<!-- Functionality Scripts -->
-		<script src="js/data.js"></script>
+		<script src="js/navigationControls.js"></script>
     </body>
 </html>
