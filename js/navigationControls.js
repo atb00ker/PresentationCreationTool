@@ -1,6 +1,9 @@
 var slides = [[0,0],[1,0],[2,0],[2,1],[3,0]];
+var progressLenght=0;
+for(x=0;x<slides.length;x++){
+	if(slides[x][1]==0) progressLenght++;
+}
 var userPosition=0;
-var currentPositionX=0;
 var currentPositionY=0;
 document.getElementById("slideX"+slides[userPosition][0]+"Y"+slides	[userPosition][1]).classList.add("slideActive");
 slideExistence();
@@ -76,6 +79,8 @@ function slideExistence() {
 			document.getElementById("navControlsDown").classList.add("buttonPassive");
 		}
 	}
+/*Progress Bar update*/
+	progressTrack();
 }
 /*Pressing Button Actions
 These functions need Slide existence in all direction in work.*/
@@ -119,7 +124,18 @@ function buttonClickDown() {
 		}while(slides[userPosition][1]>=currentPositionY);//Works till it finds a next slide in Y-axis.
 		document.getElementById("slideX"+slides[userPosition][0]+"Y"+slides[userPosition][1]).classList.add("slideActive");
 		slideExistence();
-	}	
+	}
+}
+/*Progress Bar*/
+function progressTrack() {
+if(slides[userPosition][1]==0) {
+	document.getElementById("progressBar").style.display = "block";
+	var progress = document.getElementById("progressBar");
+	var percent = (100/(progressLenght))*(userPosition+1);
+		progress.style.width = percent + '%';
+	}
+else
+	document.getElementById("progressBar").style.display = "none";
 }
 /*Call the button action function from input via keyboard*/
 window.onkeyup = function(e) {

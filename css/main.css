@@ -94,6 +94,16 @@ body,html{
 }
 .buttonPassive{opacity: 0.2;}
 /**************************
+*Progress Bar
+**************************/
+#progressBar{
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+	height: 3.2px;
+	background-color: #4CAF50;
+}
+/**************************
 *Navigation Changes
 **************************/
 .slidePassive{display:none;}
