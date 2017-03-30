@@ -13,7 +13,6 @@ body,html{
 }
 .pageTitle{
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
 	text-align: center;
@@ -27,12 +26,37 @@ body,html{
 	font-size: 2.6vmax;
 	letter-spacing: 2px;
 	position: absolute;
-	top: 50%;
 	left: 0px;
 	width: 100%;
-	text-align: center;
 	z-index:1;
 	padding-bottom: 30px;
+}
+.pageImage{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+.topicPageTitle{
+	top: 50%;
+}
+.topicPageContent{
+	top: 50%;
+	text-align: center;
+}
+.informationPageTitle{
+	top: 30%;
+}
+.informationPageContent{
+	top: 30%;
+	text-align: left;
+	width: auto;
+	margin-left: 10px;
+}
+@media all and (min-width:500px){
+	.informationPageContent{
+		margin-left: 60px;
+	}
 }
 /**************************
 * Nanigation Controls
@@ -68,23 +92,9 @@ body,html{
 	color:#fff;
 	z-index:2;
 }
-.buttonPassive{opacity: 0.5;}
-.buttonActive{opacity: 1;}
+.buttonPassive{opacity: 0.2;}
 /**************************
 *Navigation Changes
 **************************/
-#homePage{display:none;}
-#secondPage{display:none;}
-.active{display:block !important;}
-/**************************
-*Pages
-**************************/
-#secondPageTitle{
-	top: 30%;
-}
-#secondPageContent{
-	top: 30%;
-	text-align: left;
-	width: auto;
-	margin-left: 10px;
-}
+.slidePassive{display:none;}
+.slideActive{display:block !important;}
