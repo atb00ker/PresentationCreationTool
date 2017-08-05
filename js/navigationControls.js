@@ -1,4 +1,4 @@
-var slides = [[0,0],[1,0],[2,0],[2,1],[3,0]];
+var slides = [[0,0],[1,0],[2,0],[2,1],[2,2],[2,3]];
 var progressLenght=0;
 for(x=0;x<slides.length;x++){
 	if(slides[x][1]==0) progressLenght++;
