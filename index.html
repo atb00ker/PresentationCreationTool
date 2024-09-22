@@ -1,146 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-    <head>
-        <meta charset="utf-8">
+    <title>Simple Presentation Creator</title>
 
-        <title>ALiASnMe</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Search engine optimisatin -->
+    <meta name="description" content="Simple Presentation Creator" />
+    <meta name="keywords" content="Presentation, HTML" />
+    <meta name="author" content="Ajay Tripathi" />
+    <meta name="theme-color" content="#4C4C4C" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
-		<!-- Search engine optimisatin -->
-		<meta name="description" content="ALiAS and ME">
-		<meta name="keywords" content="Aset, Alias, Alias Club, Linux, Amity, Linux User Group, LUG, Amity LUG, Linux Assistance, What is ALiAS, ALiAS and Me">
-		<meta name="author" content="ALIAS">
-		<!-- End Search Engine Optimisation -->
-		
-		<!-- Browser tab theme color for Chrome on Android -->
-		<meta name="theme-color" content="#4C4C4C">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		
-		<!-- Site favicon -->
-		<link href="images/ALiAS.png" rel="shortcut icon">
-		<link href="images/ALiAS.png" rel="apple-touch-icon">	
+    <!-- Site favicon -->
+    <link href="images/favicon.png" rel="shortcut icon" />
+    <link href="images/favicon.png" rel="apple-touch-icon" />
 
-		<!-- Font Awesome CSS -->
-		<link href="css/font-awesome.min.css" rel="stylesheet" />
-		
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Anton|Source+Sans+Pro" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link href="css/main.css" rel="stylesheet" />
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-	</head>
-    <body>
-	<!--Navigation Bar-->
-		<div id="controlPositions">
-			<a id="navControlsLeft" onclick="buttonClickLeft()" href="#"><i class="fa fa-caret-left"></i></a>
-			<a id="navControlsUp" onclick="buttonClickUp()" href="#"><i class="fa fa-caret-up"></i></a>
-			<a id="navControlsDown" onclick="buttonClickDown()" href="#"><i class="fa fa-caret-down"></i></a>
-			<a id="navControlsRight" onclick="buttonClickRight()" href="#"><i class="fa fa-caret-right"></i></a>
-		</div>
-	<!--Progress Bar-->
-	<div>
-		<div id="progressBar"></div>
-	</div>
-	
-<!-- Page details and information to be added/removed below as per the sample as followed! PageX[Page Number on X-Axis]Y[Page Number on Y-Axis]
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <div id="controlPositions">
+      <a id="navControlsLeft" onclick="buttonClickLeft()" href="#"
+        ><i class="fa fa-caret-left"></i
+      ></a>
+      <a id="navControlsUp" onclick="buttonClickUp()" href="#"
+        ><i class="fa fa-caret-up"></i
+      ></a>
+      <a id="navControlsDown" onclick="buttonClickDown()" href="#"
+        ><i class="fa fa-caret-down"></i
+      ></a>
+      <a id="navControlsRight" onclick="buttonClickRight()" href="#"
+        ><i class="fa fa-caret-right"></i
+      ></a>
+    </div>
+    <!--Progress Bar-->
+    <div>
+      <div id="progressBar"></div>
+    </div>
+
+    <!-- Page details and information to be added/removed below as per the sample as followed! PageX[Page Number on X-Axis]Y[Page Number on Y-Axis]
 
 	Sample Page:
-	
-	X Page 
         <section class="slidePassive" id="slideX3Y0">
-			<div class="pageTitle">	
-				Sample
-			</div>
-			<div class="pageContent">
-				Sample Content
-			</div>
-			<div class="pageImage">
-				<img src="images/ALiAS.png"/>
-			</div>
+          <div class="pageTitle">
+            Sample
+          </div>
+          <div class="pageContent">
+            Sample Content
+          </div>
+          <div class="pageImage">
+            <img src="images/favicon.png"/>
+          </div>
         </section>
 
-Edits to be made below this point, After a page is added; Navigation Changes(main.css) PageLast, PageOne, refreshOnClick()(navigationControls.js) to be amended accordingly.-->
+Edits to be made below this point, After a page is added; Navigation Changes(main.css) PageLast, PageOne, refreshOnClick()(navigation.js) to be amended accordingly.-->
 
-		
-	<!-- X0Y0 Page -->
-        <section class="slidePassive" id="slideX0Y0">
-			<div class="pageTitle topicPageTitle">	
-				ALiAS
-			</div>
-			<div class="pageContent topicPageContent">
-				whats the hype about, and whats in it for me
-			</div>
-        </section>
+    <!-- X0Y0 Page -->
+    <section class="slidePassive" id="slideX0Y0">
+      <div class="pageTitle topicPageTitle">
+        Simple Presentation Creation Tool
+      </div>
+      <div class="pageContent topicPageContent">
+        Create HTML-based presentations with ease
+      </div>
+    </section>
 
-	<!-- X1Y0 Page -->
-        <section class="slidePassive" id="slideX1Y0">
-			<div class="pageTitle informationPageTitle">	
-				What is ALiAS
-			</div>
-			<div class="pageContent informationPageContent">
-				<ul>
-					A Club in amity Where You Can:
-					<li>Find like minded Delhi/NCR Tech Communities. (Pydelhi)</li>
-					<li>Meet experts working in various industries.</li>
-					<li>Oppertunity for intership under our Alumni.</li>
-					<li>Find people interested in key events like GSoC.</li>
-					<li>Learn Linux, Programming Languages, Networking, UI/UX Designing etc.</li>
-				</ul>
-			</div>
-        </section>
+    <!-- X1Y0 Page -->
+    <section class="slidePassive" id="slideX1Y0">
+      <div class="pageTitle informationPageTitle">Features of This Tool</div>
+      <div class="pageContent informationPageContent">
+        <ul>
+          Key features of this presentation tool:
+          <li>Easy HTML-based slide creation</li>
+          <li>Responsive navigation with arrow controls</li>
+          <li>Support for both horizontal and vertical slide layouts</li>
+          <li>Customizable styles for titles, content, and images</li>
+          <li>Progress bar to track presentation progress</li>
+        </ul>
+      </div>
+    </section>
 
-	<!-- X2Y0 Page -->
-        <section class="slidePassive" id="slideX2Y0">
-			<div class="pageTitle informationPageTitle">ALiAS Orangises</div>
-			<div class="pageContent informationPageContent">
-				<ul>
-					<li>Webinars</li>
-					<li>Workshops</li>
-					<li>Oppertunity to work in projects</li>
-				</ul>
-			</div>
-        </section>
-		
-	<!-- X2Y1 Page -->
-        <section class="slidePassive" id="slideX2Y1">
-			<div class="pageTitle informationPageTitle">	
-				Webinars
-			</div>
-			<div class="pageContent informationPageContent">
-				Talk with experts over youtube at night time (around 9:00PM) for anyone to take part and learn.
-			</div>
-        </section>
-	<!-- X2Y2 Page -->
-        <section class="slidePassive" id="slideX2Y2">
-			<div class="pageTitle informationPageTitle">	
-				Workshops
-			</div>
-			<div class="pageContent informationPageContent">
-				Workshop during college hours for students to attend and learn the basics of a field and where to start learning! 
-			</div>
-        </section>
-	<!-- X2Y3 Page -->
-        <section class="slidePassive" id="slideX2Y3">
-			<div class="pageTitle informationPageTitle">	
-				Oppertunity to work in projects
-			</div>
-			<div class="pageContent informationPageContent">
-				You may get oppertunity to work with a team and learn the work environment of the field you are interested in...
-			</div>
-        </section>
-		<!-- Functionality Scripts -->
-		<script src="js/navigationControls.js"></script>
-    </body>
+    <!-- X2Y0 Page -->
+    <section class="slidePassive" id="slideX2Y0">
+      <div class="pageTitle informationPageTitle">How to Use This Tool</div>
+      <div class="pageContent informationPageContent">
+        <ul>
+          <li>Edit the index.html file to add new slides</li>
+          <li>Use the provided slide template structure</li>
+          <li>Customize slide content with pageTitle and pageContent divs</li>
+          <li>Add images using the pageImage div if needed</li>
+          <li>Adjust navigation in main.css and navigation.js as necessary</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- X2Y1 Page -->
+    <section class="slidePassive" id="slideX2Y1">
+      <div class="pageTitle informationPageTitle">How to Add New Slides</div>
+      <div class="pageContent informationPageContent">
+        <ol>
+          <li>Open index.html in a text editor</li>
+          <li>Copy an existing slide section and paste where needed</li>
+          <li>Update the id attribute (e.g., "slideX2Y1" to "slideX2Y2")</li>
+          <li>Modify pageTitle and pageContent as needed</li>
+          <li>Add pageImage div if including an image</li>
+          <li>Update slides array in navigation.js</li>
+        </ol>
+      </div>
+    </section>
+    <!-- X2Y2 Page -->
+    <section class="slidePassive" id="slideX2Y2">
+      <div class="pageTitle informationPageTitle">
+        Use the Provided Slide Template
+      </div>
+      <div class="pageContent informationPageContent">
+        To create new slides, use the provided template structure:
+        <pre>
+&lt;section class="slidePassive" id="slideXnYm"&gt;
+  &lt;div class="pageTitle"&gt;Your Title Here&lt;/div&gt;
+  &lt;div class="pageContent"&gt;Your Content Here&lt;/div&gt;
+  &lt;div class="pageImage"&gt;
+    &lt;img src="path/to/image.jpg" /&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+        </pre>
+      </div>
+    </section>
+    <!-- X2Y3 Page -->
+    <section class="slidePassive" id="slideX2Y3">
+      <div class="pageTitle informationPageTitle">
+        Horizontal and Vertical slides
+      </div>
+      <div class="pageContent informationPageContent">
+        This presentation tool offers flexibility with:
+        <ul>
+          <li>Horizontal navigation for main topics</li>
+          <li>Vertical navigation for subtopics</li>
+          <li>Easy customization of slide order in navigation.js</li>
+          <li>Intuitive user interface for seamless presentation flow</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- X2Y4 Page -->
+    <section class="slidePassive" id="slideX2Y4">
+      <div class="pageTitle informationPageTitle">Customizable Styling</div>
+      <div class="pageContent informationPageContent">
+        <ul>
+          <li>Easily modify the appearance of your presentation</li>
+          <li>
+            Edit the CSS in css/main.css to change colors, fonts, and layouts
+          </li>
+          <li>Responsive design adapts to different screen sizes</li>
+          <li>
+            Use custom classes for specific slide types (e.g.,
+            informationPageTitle)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- X2Y5 Page -->
+    <section class="slidePassive" id="slideX2Y5">
+      <div class="pageTitle informationPageTitle">Simple Navigation System</div>
+      <div class="pageContent informationPageContent">
+        <ul>
+          <li>Intuitive left/right arrows for horizontal navigation</li>
+          <li>Up/down arrows for vertical navigation within a topic</li>
+          <li>Progress bar shows current position in the presentation</li>
+          <li>Easily customizable navigation logic in js/navigation.js</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- X3Y0 Page -->
+    <section class="slidePassive" id="slideX3Y0">
+      <div class="pageImageTitle">Image Example</div>
+      <img
+        src="images/favicon.png"
+        alt="Sample Image"
+        class="pageImage"
+        style="max-width: 80%; height: auto"
+      />
+    </section>
+
+    <!-- Functionality Scripts -->
+    <script src="js/navigation.js"></script>
+  </body>
 </html>

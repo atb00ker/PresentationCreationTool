@@ -1,110 +1,162 @@
 /**************************
 * Common Code
 **************************/
-*{
-	font-family: 'Anton', sans-serif;
-	box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
-body,html{
-	margin:0;padding:0;
-	width:100%;
-	background-color: #282828;
-	color: #fff;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #282828;
+    color: #fff;
 }
-.pageTitle{
+
+.pageMainTitle {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -100%);
-	text-align: center;
-	font-size: 6vmax;
-	font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 6vmax;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-	z-index:1;
+    z-index: 1;
 }
-.pageContent{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 2.6vmax;
-	letter-spacing: 2px;
-	position: absolute;
-	left: 0px;
-	width: 100%;
-	z-index:1;
-	padding-bottom: 30px;
-}
-.pageImage{
+
+.pageTitle {
     position: absolute;
-    top: 50%;
-	left: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    font-size: 4vmax;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.pageContent {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.6vmax;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 30px;
+}
+
+.pageImageTitle {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2vmax;
+    z-index: 1;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.pageImage {
+    position: absolute;
+    top: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
 }
-.topicPageTitle{
-	top: 50%;
+
+.topicPageTitle {
+    top: 50%;
+    font-size: 6vmax;
 }
-.topicPageContent{
-	top: 50%;
-	text-align: center;
+
+.topicPageContent {
+    top: 50%;
+    text-align: center;
 }
-.informationPageTitle{
-	top: 30%;
+
+.informationPageTitle {
+    top: 30%;
 }
-.informationPageContent{
-	top: 30%;
-	text-align: left;
-	width: auto;
-	margin-left: 10px;
+
+.informationPageContent {
+    top: 30%;
+    text-align: left;
+    width: auto;
+    margin-left: 10px;
 }
-@media all and (min-width:500px){
-	.informationPageContent{
-		margin-left: 60px;
-	}
+
+@media all and (min-width: 500px) {
+    .informationPageContent {
+        margin-left: 60px;
+    }
 }
+
 /**************************
-* Nanigation Controls
+* Navigation Controls
 **************************/
-#controlPositions{
-	position: fixed;
-	bottom: 1px;
-	width: 100%;
-	text-align: center;
-	z-index:2;
+#controlPositions {
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
 }
-#navControlsRight{
+
+#navControlsRight {
     font-size: 50px;
-	padding: 0vmin 2px 0vmin 9vmin;
-	color:#fff;
-	z-index:2;
+    padding: 0vmin 2px 0vmin 9vmin;
+    color: #fff;
+    z-index: 2;
 }
-#navControlsLeft{
+
+#navControlsLeft {
     font-size: 50px;
-	padding: 0vmin 9vmin 0vmin 2px;
-	color:#fff;
-	z-index:2;
+    padding: 0vmin 9vmin 0vmin 2px;
+    color: #fff;
+    z-index: 2;
 }
-#navControlsDown{
+
+#navControlsDown {
     font-size: 50px;
-	padding: 0vmin 9vmin 0vmin 9vmin;
-	color:#fff;
-	z-index:2;
+    padding: 0vmin 9vmin 0vmin 9vmin;
+    color: #fff;
+    z-index: 2;
 }
-#navControlsUp{
-	font-size: 50px;
-	padding: 0vmin 9vmin 0vmin 9vmin;
-	color:#fff;
-	z-index:2;
+
+#navControlsUp {
+    font-size: 50px;
+    padding: 0vmin 9vmin 0vmin 9vmin;
+    color: #fff;
+    z-index: 2;
 }
-.buttonPassive{opacity: 0.2;}
+
+.buttonPassive {
+    opacity: 0.2;
+}
+
 /**************************
-*Progress Bar
+* Progress Bar
 **************************/
-#progressBar{
-	position: fixed;
-	bottom: 0px;
-	left:0px;
-	height: 3.2px;
-	background-color: #4CAF50;
+#progressBar {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 3.2px;
+    background-color: #4CAF50;
 }
+
 /**************************
-*Navigation Changes
+* Navigation Changes
 **************************/
-.slidePassive{display:none;}
-.slideActive{display:block !important;}
+.slidePassive {
+    display: none;
+}
+
+.slideActive {
+    display: block !important;
+}
